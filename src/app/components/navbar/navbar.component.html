@@ -1,0 +1,35 @@
+<!-- <h1 class="title">
+  Laboratory Information Management System
+</h1> -->
+<mat-toolbar>
+    <mat-toolbar-row >
+      <h3 class="text"><span><a routerLink="/home">RDMS</a></span></h3>
+      <button mat-button (click)="opened =!opened" 
+        matTooltip="Toggle to see menu" matTooltipHideDelay="100" 
+        matTooltipClass="mat-tool-tip"
+        [matTooltipPosition]="position.value!">
+        <mat-icon>menu</mat-icon>
+      </button>
+      <span class="home-logo">
+        <!-- <button mat-button><a routerLink="/home"><mat-icon>home</mat-icon></a></button> -->
+        <h3 class="text">Research Data Management System</h3>
+      </span> 
+    </mat-toolbar-row>
+  </mat-toolbar>
+  <mat-sidenav-container>
+    <mat-sidenav [(opened)] = "opened" mode="side">
+      <mat-list>
+        <mat-list-item><mat-icon>home</mat-icon><a routerLink="/home">Home</a></mat-list-item>
+        <mat-list-item><mat-icon>device_hub</mat-icon><a href="https://lims.biosustain.dtu.dk/app/home" target="_blank" >Lims</a></mat-list-item>
+        <mat-list-item><mat-icon>ballot</mat-icon><a routerLink="/software-catalog">Software-catalog</a></mat-list-item>
+        <mat-list-item> <mat-icon>folder</mat-icon><a routerLink="/data-catalog">Data Catalog</a></mat-list-item>
+        <mat-list-item><mat-icon>folder_open</mat-icon><a routerLink="/policies">Policies</a></mat-list-item>
+        <mat-list-item><mat-icon> dashboard </mat-icon><a routerLink="/dashboard">Dashboard</a></mat-list-item>
+        <mat-list-item><mat-icon>storage</mat-icon><a routerLink="/internal-databases">Internal Databases</a></mat-list-item>
+      </mat-list>
+    </mat-sidenav>
+    <mat-sidenav-content>
+      <router-outlet></router-outlet>
+    </mat-sidenav-content>
+
+  </mat-sidenav-container>
