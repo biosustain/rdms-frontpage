@@ -2,6 +2,13 @@
   Laboratory Information Management System
 </h1> -->
 <mat-toolbar>
+    <mat-toolbar-row class="dtu_logo">
+      <span><img src="/assets/images/dtulogo2_colour.png"></span>
+      <div class="side_texts">
+        <p class="line_1">DTU Biosustain</p>        
+        <p class="line_2">The Novo Nordisk Foundation Center for Biosustainability</p>
+      </div>
+    </mat-toolbar-row>
     <mat-toolbar-row >
       <h3 class="text"><span><a routerLink="/home">RDMS</a></span></h3>
       <button mat-button (click)="opened =!opened" 
@@ -12,7 +19,7 @@
       </button>
       <span class="home-logo">
         <!-- <button mat-button><a routerLink="/home"><mat-icon>home</mat-icon></a></button> -->
-        <h3 class="text">Research Data Management System</h3>
+        <!-- <h3 class="text">Research Data Management System</h3> -->
       </span> 
     </mat-toolbar-row>
   </mat-toolbar>
