@@ -1,0 +1,69 @@
+/* The hero image */
+.hero-image {
+    /* Use "linear-gradient" to add a darken background effect to the image (photographer.jpg). This will make the text easier to read */
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("/assets/images/Data-lake-network-source_Hero.jpg");
+  
+    /* Set a specific height */
+    height: 25%;
+  
+    /* Position and center the image to scale nicely on all screens */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+  }
+  
+  /* Place text in the middle of the image */
+  .hero-text {
+    text-align: start;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    display: block;
+    font-weight: 700;
+    font-family: "Neo sans, sans-serif";
+  }
+  .hero-text h1 {
+    font-size: 3.5em;
+  }
+
+.intro p{
+    margin-top: 40px;
+    margin-bottom: 40px;
+    font-weight: 500;
+    font-size: 1.2em;
+}
+
+.mat-form-field + .mat-form-field {
+    margin-left: 8px;
+  }
+  .mat-expansion-panel{
+    background:#0c8caa;
+    color:#fff;
+  }
+  mat-panel-title{
+    color:#fff;
+  }
+
+  .mat-expansion-panel button{
+    background: #fff;
+    color: #0c8caa;
+    margin-right: 8px;
+  }
+
+  .policy-card button{
+    background: #fff;
+    color: #0c8caa;
+    margin-right: 8px;
+  }
+
+  .policy-card {
+    background:#0c8caa;
+    color:#fff;
+    margin-bottom: 10px;
+    margin-top: 5px;
+  }
+ 
+  

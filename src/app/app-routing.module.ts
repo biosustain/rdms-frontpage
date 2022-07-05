@@ -1,3 +1,4 @@
+import { PdfpolicyComponent } from './components/pdfpolicy/pdfpolicy.component';
 import { LimsComponent } from './components/lims/lims.component';
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
@@ -7,6 +8,8 @@ import { HomeComponent } from './components/home/home.component';
 import { SoftwareCatalogComponent } from './components/software-catalog/software-catalog.component';
 import { PoliciesComponent } from './components/policies/policies.component';
 import { InternalDatabasesComponent } from './components/internal-databases/internal-databases.component';
+import { CfbGuidelinesComponent } from './components/policies/cfb-guidelines.component';
+import { ContactComponent } from './components/contact/contact.component';
 
 const routes: Routes = [
   {path:"", component:HomeComponent},
@@ -17,6 +20,9 @@ const routes: Routes = [
   {path:"policies", component:PoliciesComponent},
   {path:"dashboard", component:DashboardComponent},
   {path:"internal-databases", component:InternalDatabasesComponent},
+  {path:"pdfpolicy", component:PdfpolicyComponent},
+  {path:"policies/cfb_guidelines", component:CfbGuidelinesComponent},
+  {path:"contact", component:ContactComponent},
   
   
 ];

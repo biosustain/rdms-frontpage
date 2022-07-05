@@ -19,7 +19,13 @@ import { NavbarComponent } from './components/navbar/navbar.component';
 import { PoliciesComponent } from './components/policies/policies.component';
 import { InternalDatabasesComponent } from './components/internal-databases/internal-databases.component';
 import { DataAnalysisComponent } from './components/data-analysis/data-analysis.component';
-
+import {MatExpansionModule} from '@angular/material/expansion';
+import {MatCardModule} from '@angular/material/card';
+import { PdfpolicyComponent } from './components/pdfpolicy/pdfpolicy.component';
+import { NgxExtendedPdfViewerModule } from 'ngx-extended-pdf-viewer';
+import  {  PdfViewerModule  }  from  'ng2-pdf-viewer';
+import { CfbGuidelinesComponent } from './components/policies/cfb-guidelines.component';
+import { ContactComponent } from './components/contact/contact.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -31,7 +37,11 @@ import { DataAnalysisComponent } from './components/data-analysis/data-analysis.
     NavbarComponent,
     PoliciesComponent,
     InternalDatabasesComponent,
-    DataAnalysisComponent
+    DataAnalysisComponent,
+    PdfpolicyComponent,
+    CfbGuidelinesComponent,
+    ContactComponent
+
   ],
   imports: [
     BrowserModule,
@@ -42,7 +52,11 @@ import { DataAnalysisComponent } from './components/data-analysis/data-analysis.
     MatButtonModule,
     MatSidenavModule,
     MatListModule,
-    MatTooltipModule
+    MatTooltipModule,
+    MatExpansionModule,
+    MatCardModule,
+    NgxExtendedPdfViewerModule,
+    PdfViewerModule
   ],
 
   providers: [],
