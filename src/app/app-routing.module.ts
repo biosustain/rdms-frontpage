@@ -8,8 +8,11 @@ import { HomeComponent } from './components/home/home.component';
 import { SoftwareCatalogComponent } from './components/software-catalog/software-catalog.component';
 import { PoliciesComponent } from './components/policies/policies.component';
 import { InternalDatabasesComponent } from './components/internal-databases/internal-databases.component';
-import { CfbGuidelinesComponent } from './components/policies/cfb-guidelines.component';
+import { CfbGuidelinesComponent } from './components/policies/cfb-guidelines/cfb-guidelines.component';
 import { ContactComponent } from './components/contact/contact.component';
+import { DtuGuidelinesComponent } from './components/policies/dtu-guidelines/dtu-guidelines.component';
+import { NationalGuidelinesComponent } from './components/policies/national-guidelines/national-guidelines.component';
+import { InternationalGuidelinesComponent } from './components/policies/international-guidelines/international-guidelines.component';
 
 const routes: Routes = [
   {path:"", component:HomeComponent},
@@ -21,8 +24,11 @@ const routes: Routes = [
   {path:"dashboard", component:DashboardComponent},
   {path:"internal-databases", component:InternalDatabasesComponent},
   {path:"pdfpolicy", component:PdfpolicyComponent},
-  {path:"policies/cfb_guidelines", component:CfbGuidelinesComponent},
+  {path:"policies/cfb-guidelines", component:CfbGuidelinesComponent},
   {path:"contact", component:ContactComponent},
+  {path:"policies/dtu-guidelines", component:DtuGuidelinesComponent},
+  {path:"policies/national-guidelines", component:NationalGuidelinesComponent},
+  {path:"policies/international-guidelines", component:InternationalGuidelinesComponent},
   
   
 ];

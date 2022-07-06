@@ -32,7 +32,6 @@
 .intro p{
     margin-top: 40px;
     margin-bottom: 40px;
-    font-weight: 500;
     font-size: 1.2em;
 }
 
@@ -54,15 +53,13 @@
   }
 
   .policy-card button{
-    background: #fff;
-    color: #0c8caa;
+    background: #0c8caa;
+    color: #fff;
     margin-right: 8px;
   }
 
   .policy-card {
-    background:#0c8caa;
-    color:#fff;
-    margin-bottom: 10px;
+    margin-bottom: 15px;
     margin-top: 5px;
   }
   .mat-card-content span a{
@@ -71,3 +68,12 @@
     border-radius: 3px;
     font-size: large;
   }
+
+  .mat-card-title{
+    color: #0c8caa;
+    cursor: pointer;
+  }
+  .mat-card-title:hover{
+    color: #0c5363;
+  }
+  

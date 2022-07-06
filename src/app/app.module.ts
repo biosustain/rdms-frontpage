@@ -24,8 +24,11 @@ import {MatCardModule} from '@angular/material/card';
 import { PdfpolicyComponent } from './components/pdfpolicy/pdfpolicy.component';
 import { NgxExtendedPdfViewerModule } from 'ngx-extended-pdf-viewer';
 import  {  PdfViewerModule  }  from  'ng2-pdf-viewer';
-import { CfbGuidelinesComponent } from './components/policies/cfb-guidelines.component';
+import { CfbGuidelinesComponent } from './components/policies/cfb-guidelines/cfb-guidelines.component';
 import { ContactComponent } from './components/contact/contact.component';
+import { DtuGuidelinesComponent } from './components/policies/dtu-guidelines/dtu-guidelines.component';
+import { NationalGuidelinesComponent } from './components/policies/national-guidelines/national-guidelines.component';
+import { InternationalGuidelinesComponent } from './components/policies/international-guidelines/international-guidelines.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -40,7 +43,10 @@ import { ContactComponent } from './components/contact/contact.component';
     DataAnalysisComponent,
     PdfpolicyComponent,
     CfbGuidelinesComponent,
-    ContactComponent
+    ContactComponent,
+    DtuGuidelinesComponent,
+    NationalGuidelinesComponent,
+    InternationalGuidelinesComponent
 
   ],
   imports: [
