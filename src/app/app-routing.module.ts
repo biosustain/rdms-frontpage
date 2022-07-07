@@ -29,6 +29,8 @@ const routes: Routes = [
   {path:"policies/dtu-guidelines", component:DtuGuidelinesComponent},
   {path:"policies/national-guidelines", component:NationalGuidelinesComponent},
   {path:"policies/international-guidelines", component:InternationalGuidelinesComponent},
+
+  {path: '**', redirectTo: 'home', pathMatch: 'full'}
   
   
 ];
