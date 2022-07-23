@@ -62,10 +62,17 @@
     align-items: center;
 }
 
-.card .text img{
+/* .card .text img{
     height: 170px;
     border-radius: 50%;
   margin-bottom:10px;
+} */
+
+.card img{
+    width: 75%;
+    margin:0 auto;
+    border-radius: 60%;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
 }
 
 .card .text h3{

@@ -6,6 +6,7 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./international-guidelines.component.css']
 })
 export class InternationalGuidelinesComponent implements OnInit {
+  title: string ="International Guidelines and Policies"
 
   constructor() { }
 

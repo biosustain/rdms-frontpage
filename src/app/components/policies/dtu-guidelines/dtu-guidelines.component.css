@@ -1,0 +1,139 @@
+.hero-image {
+  /* Use "linear-gradient" to add a darken background effect to the image (photographer.jpg). This will make the text easier to read */
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url("/assets/images/Data-lake-network-source_Hero.jpg");
+
+  /* Set a specific height */
+  height: 25%;
+
+  /* Position and center the image to scale nicely on all screens */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+
+/* Place text in the middle of the image */
+.hero-text {
+  text-align: start;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  display: block;
+  font-weight: 700;
+  font-family: "Neo sans, sans-serif";
+}
+.hero-text h1 {
+  font-size: 3.5em;
+}
+.hero-text p {
+  font-weight: 500;
+  font-size: 18px;
+}
+.team-title {
+  text-align: center;
+  margin: 20px;
+  font-size: 25px;
+}
+.contents {
+  display: flex;
+  /* justify-content:space-evenly; */
+  align-items: stretch;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.card {
+  box-shadow: rgba(0, 0, 0, 0.15) 0px 5px 15px 0px;
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 410px;
+  margin: 10px;
+}
+
+.card .text {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.card .text img {
+  height: 170px;
+  border-radius: 50%;
+  margin-bottom: 10px;
+}
+
+.card .text h3 {
+  font-size: 40px;
+  font-weight: 400;
+}
+
+.card .text p:nth-of-type(1) {
+  color: #0c8caa;
+  font-size: 15px;
+  margin-top: -5px;
+}
+
+.card .text p:nth-of-type(2) {
+  margin: 10px;
+  width: 90%;
+  text-align: center;
+}
+
+.card .links {
+  width: 30%;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.card .links i {
+  color: #0c8caa;
+  font-size: 20px;
+  cursor: pointer;
+  margin: 5px;
+}
+
+.card .links i:hover {
+  color: rgb(29, 157, 189);
+}
+
+.btn-block {
+  /* width: auto; */
+  color: #0c8caa;
+  font-size: large;
+}
+
+.btn-block:hover {
+  background-color: #0c8caa;
+  color: #fff;
+  font-size: large;
+  transition: all;
+}
+
+/* .btn-link{
+    background-color: #0c8caa;
+} */
+/* .btn-link:hover{
+    color: #fff;
+    background-color: #50bad2;
+} */
+a {
+  text-decoration: none;
+  /* color: #fff; */
+}
+.fa-color {
+  color: #0c8caa;
+}
+
+.mailto {
+  color: #0c8caa;
+}
+img {
+  /* height: 200px;*/
+  border-color: #0c8caa;
+}

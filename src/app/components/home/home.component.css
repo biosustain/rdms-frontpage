@@ -1,128 +1,146 @@
 /* The hero image */
 .hero-image {
-    /* Use "linear-gradient" to add a darken background effect to the image (photographer.jpg). This will make the text easier to read */
-    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("/assets/images/Data-lake-network-source_Hero.jpg");
-  
-    /* Set a specific height */
-    height: 25%;
-  
-    /* Position and center the image to scale nicely on all screens */
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    position: relative;
-  }
-  
-  /* Place text in the middle of the image */
-  .hero-text {
-    text-align: start;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    color: white;
-    display: block;
-    font-weight: 700;
-    font-family: "Neo sans, sans-serif";
-  }
-  .hero-text h1 {
-    font-size: 3.5em;
-  }
-  .hero-text p{
-    font-weight: 500;
-    font-size: 18px;
-  }
-  /* .main-container {
+  /* Use "linear-gradient" to add a darken background effect to the image (photographer.jpg). This will make the text easier to read */
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url("/assets/images/Data-lake-network-source_Hero.jpg");
+
+  /* Set a specific height */
+  height: 25%;
+
+  /* Position and center the image to scale nicely on all screens */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+
+/* Place text in the middle of the image */
+.hero-text {
+  text-align: start;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  display: block;
+  font-weight: 700;
+  font-family: "Neo sans, sans-serif";
+}
+.hero-text h1 {
+  font-size: 3.5em;
+}
+.hero-text p {
+  font-weight: 500;
+  font-size: 18px;
+}
+/* .main-container {
    display:flex;
     padding: 30px;
     position: relative;
   }  */
-  
-  .flip-card {
-    /* background-color: transparent;
+
+.flip-card.col{
+  /* background-color: transparent;
     width: 300px;
     height: 300px; */
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    perspective: 1000px;
-  }
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+  perspective: 1000px;
+  margin-bottom: 10px;
   
-  .flip-card-inner {
-    position: relative;
-    width: 300px;
-    height: 150px;
-    text-align: center;
-    transition: transform 0.6s;
-    transform-style: preserve-3d;
-    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
-    /* display:grid; */
-  }
-  
-  .flip-card:hover .flip-card-inner {
-    transform: rotateY(180deg);
-  }
-  
-  .flip-card-front, .flip-card-back {
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    -webkit-backface-visibility: hidden;
-    backface-visibility: hidden;
-    border-radius: 5px;
-    color:white;
-    padding: 6px;
-    align-items: center;
-    background:#0c8caa;
-  }
-  
-  .flip-card-front {
-    /* background-color: #bbb; */
-    /* color: black; */
-  }
-  
-  .flip-card-back {
-    /* background-color: #2980b9; */
-    /* color: white; */
-    transform: rotateY(180deg);
-  }
-  .card_title {
-    font-weight: 400;
-    color: #ffffff;
-    text-align: center;
-    margin-top: 5px;
-    margin-bottom: 5px;
-  }
-  .mat-icon{
-    transform: scale(1.5)
-   }
-   .card_apply {
-    /* grid-row: 4/5; */
-    align-self: center;
-    text-align: center;
-    margin-bottom: 3px;
-    margin-top: 4px;
-  } 
+}
 
-  .card_link
- {
+.flip-card-inner {
+  position: relative;
+  /* width: 300px; */
+  width: 230px;
+  height: 200px;
+  text-align: center;
+  transition: transform 0.6s;
+  transform-style: preserve-3d;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  /* box-shadow: 0 4px 8px 0 #0c8caa; */
+
+  /* display:grid; */
+}
+
+.flip-card:hover .flip-card-inner {
+  transform: rotateY(180deg);
+}
+
+.flip-card-front,
+.flip-card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  border-radius: 8px;
+  /* color:white; */
+  padding: 6px;
+  align-items: center;
+  /* background:#0c8caa; */
+}
+
+.flip-card-front {
+  /* background-color: #bbb; */
+  /* color: black; */
+}
+
+.flip-card-back {
+  /* background-color: #2980b9; */
+  /* color: white; */
+  transform: rotateY(180deg);
+  color: #0c8caa;
+}
+.card_title {
+  font-weight: 400;
+  /* color: #ffffff; */
+  text-align: center;
+  margin-top: 15px;
+  margin-bottom: 5px;
+  color: #0c8caa;
+}
+.mat-icon {
+  transform: scale(1.5);
+  margin-top: 15px;
+  text-align: center;
+  font-size: xx-large;
+  margin-right: 12px;
+  color: #0c8caa;
+}
+.card_apply {
+  /* grid-row: 4/5; */
+  align-self: center;
+  text-align: center;
+  margin-bottom: 3px;
+  margin-top: 4px;
+  color: #0c8caa;
+}
+
+.card_link {
   position: relative;
   text-decoration: none;
-  color: rgba(255, 255, 255, 0.9);
+  /* color: rgba(255, 255, 255, 0.9); */
   text-align: center;
   margin: 40px;
+  color: #0c8caa;
 }
 .card_link::after {
-    position: absolute;
-    top: 25px;
-    left: 0;
-    content: "";
-    width: 0%;
-    height: 3px;
-    background-color: rgba(255, 255, 255, 0.6);
-    transition: all 0.5s;
-  }
-  
-  .card_link:hover::after {
-    width: 100%;
-  }
+  position: absolute;
+  top: 25px;
+  left: 0;
+  content: "";
+  width: 0%;
+  height: 3px;
+  /* background-color: rgba(255, 255, 255, 0.6); */
+  transition: all 0.5s;
+  background-color: #0c8caa;
+}
+
+.card_link:hover::after {
+  width: 100%;
+}
