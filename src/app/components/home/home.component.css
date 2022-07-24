@@ -94,7 +94,7 @@
   /* background-color: #2980b9; */
   /* color: white; */
   transform: rotateY(180deg);
-  color: #0c8caa;
+  color: rgb(47, 62, 234);
 }
 .card_title {
   font-weight: 400;
@@ -102,7 +102,7 @@
   text-align: center;
   margin-top: 15px;
   margin-bottom: 5px;
-  color: #0c8caa;
+  color: rgb(47, 62, 234);
 }
 .mat-icon {
   transform: scale(1.5);
@@ -110,7 +110,7 @@
   text-align: center;
   font-size: xx-large;
   margin-right: 12px;
-  color: #0c8caa;
+  color: rgb(47, 62, 234);
 }
 .card_apply {
   /* grid-row: 4/5; */
@@ -118,7 +118,7 @@
   text-align: center;
   margin-bottom: 3px;
   margin-top: 4px;
-  color: #0c8caa;
+  color: rgb(47, 62, 234);
 }
 
 .card_link {
@@ -127,7 +127,7 @@
   /* color: rgba(255, 255, 255, 0.9); */
   text-align: center;
   margin: 40px;
-  color: #0c8caa;
+  color:rgb(47, 62, 234);
 }
 .card_link::after {
   position: absolute;
@@ -138,7 +138,7 @@
   height: 3px;
   /* background-color: rgba(255, 255, 255, 0.6); */
   transition: all 0.5s;
-  background-color: #0c8caa;
+  background-color: rgb(47, 62, 234);
 }
 
 .card_link:hover::after {
